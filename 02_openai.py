@@ -1,9 +1,8 @@
 import os
 from openai import OpenAI
 
-# 1. Setup the client to point to Google instead of OpenAI
 client = OpenAI(
-    api_key= os.getenv("API_KEY"), # Replace with your actual Gemini API key
+    api_key= os.getenv("API_KEY"), # Replace with your actual API key
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
